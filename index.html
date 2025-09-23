@@ -2,62 +2,619 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Trang web lớp 7 - Truyền thống An Giang</title>
+    <title>Truyền thống An Giang - Tổ 2</title>
+    <style>
+        /* CSS Chung cho Toàn trang */
+        body {
+            background-color: pink;
+            font-family: "Comic Sans MS", sans-serif; /* Đảm bảo font Comic Sans MS hoặc fallback sans-serif */
+            line-height: 1.6;
+            max-width: 900px; /* Giới hạn chiều rộng tổng thể của nội dung trang */
+            margin: auto; /* Căn giữa toàn bộ body */
+            padding: 20px; /* Khoảng đệm xung quanh nội dung */
+            text-align: center; /* Căn giữa các phần tử inline và block không có width cụ thể */
+        }
+        h1 {
+            color: purple;
+            text-align: center; /* Căn giữa tiêu đề chính */
+            margin-bottom: 20px;
+        }
+        h2, h3, h4 {
+            color: #333;
+            text-align: left; /* Tiêu đề phụ căn trái */
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            text-align: left; /* Đoạn văn bản căn trái */
+            margin-bottom: 15px;
+        }
+
+        /* CSS cho các khối Figure (Hình ảnh và Chú thích) */
+        figure {
+            text-align: center; /* Căn giữa nội dung bên trong figure */
+            margin: 20px auto; /* Căn giữa toàn bộ khối figure và tạo khoảng cách trên/dưới */
+            max-width: 100%; /* Đảm bảo figure không bị tràn ra ngoài body */
+        }
+        figure img {
+            max-width: 100%; /* Đảm bảo ảnh không tràn ra khỏi figure */
+            height: auto; /* Giữ tỷ lệ ảnh */
+            display: block; /* Biến ảnh thành block để có thể dùng margin: auto nếu cần */
+            /* margin: 0 auto; - Không cần ở đây vì figure đã có text-align: center */
+        }
+        figcaption {
+            font-size: 18px; /* Kích thước chữ chú thích */
+            color: black; /* Màu chữ đen */
+            margin-top: 5px; /* Khoảng cách từ ảnh xuống chú thích */
+            font-family: Arial, sans-serif; /* Kiểu chữ chú thích */
+            font-weight: bold; /* Làm đậm chữ chú thích */
+        }
+
+        /* CSS cho link tải về */
+        a.download-link {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        a.download-link:hover {
+            background-color: darkmagenta;
+        }
+
+        /* Responsive CSS (cho màn hình điện thoại) */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px; /* Giảm padding trên màn hình nhỏ */
+                max-width: 100%; /* Cho phép body chiếm hết chiều rộng màn hình */
+            }
+            h2, h3, h4, p {
+                padding: 0 5px; /* Thêm padding nhẹ hai bên cho văn bản */
+            }
+            figure {
+                margin: 15px auto; /* Điều chỉnh margin cho figure */
+            }
+        }
+    </style>
 </head>
-<body style="background-color: pink; text-align: center; font-family: Comic Sans MS; line-height: 1.6; padding: 20px;">
+<body>
+    <h1>Tự hào về truyền thống quê hương.</h1>
+    <p>Tuyên truyền về những truyền thống tốt đẹp của quê hương em.</p>
 
-    <!-- Tiêu đề -->
-    <h1 style="color: purple;">Xin chào, em tên là Nguyễn Thuận Khang lớp 7A7!</h1>
+    <h2>1️⃣ Lễ hội truyền thống</h2>
 
-    <!-- Giới thiệu -->
-    <p>Đây là trang web tuyên truyền về truyền thống tốt đẹp của quê hương An Giang.</p>
-
-    <!-- Bài làm -->
-    <h2 style="color: blue;">Bài làm của em:</h2>
-
-    <!-- 1️⃣ Lễ hội -->
-    <h3>1️⃣ Lễ hội vía Bà Chúa Xứ Núi Sam (Châu Đốc)</h3>
-    <p style="text-align: left;">
-        Diễn ra vào tháng 4–5 âm lịch hàng năm.<br>
-        Đây là lễ hội lớn nhất An Giang, thu hút hàng trăm nghìn du khách.<br>
-        Nghi lễ: rước kiệu, lễ cúng, hát bội, cầu bình an và may mắn.
+    <h3>1.1 Lễ hội vía Bà Chúa Xứ Núi Sam (Châu Đốc)</h3>
+    <p>
+        Lễ hội Vía Bà Chúa Xứ Núi Sam ở thành phố Châu Đốc đã có từ rất lâu đời, mang đậm bản sắc văn hóa dân tộc của cư dân vùng sông nước Nam bộ.<br>
+        Ngày 19/12/2014, Lễ hội vía Bà Chúa Xứ Núi Sam được Bộ Văn hóa Thể thao và Du lịch đưa vào danh mục Di sản văn hóa phi vật thể Quốc gia.<br>
+        Năm 2016, hoạt động này đã được UNESCO vinh danh là Di sản văn hóa phi vật thể đại diện của nhân loại.<br>
+        Lễ hội chứa đựng những dấu ấn lịch sử giai đoạn người Việt đến vùng đất An Giang.<br>
+        Đây là lễ hội truyền thống được giữ gìn và thực hành qua nhiều thế hệ, thể hiện bản sắc và sự kế tục của cộng đồng người Kinh trong giao lưu văn hóa, chính trị, kinh tế với người Hoa, Khmer, Chăm.<br>
+        Theo truyền thuyết, vào năm 1820 – 1825, khi quân Xiêm xâm chiếm nước ta, họ gặp pho tượng đá lớn trên đỉnh núi Sam. Sau nhiều cố gắng không thành, 9 cô gái đồng trinh đã khiêng được tượng xuống chân núi, nơi được lập miếu thờ.<br>
+        Thời gian: từ ngày 23/04 đến 27/04 âm lịch hằng năm.<br>
+        Địa điểm: Miếu Bà Chúa Xứ Núi Sam Châu Đốc, tỉnh An Giang.<br>
+        Hoạt động phần lễ gồm: Lễ phục hiện rước tượng Bà xuống miếu thờ, Lễ Tắm Bà, Lễ Thỉnh sắc thần ông Thoại Ngọc Hầu, Lễ Túc yết, Lễ Xây chầu, Lễ Chánh tế và Lễ Hồi sắc.<br>
+        Phần hội gồm các hoạt động văn hóa, nghệ thuật của 4 dân tộc Kinh, Chăm, Hoa, Khmer: tuần lễ văn hóa, thể thao, trò chơi dân gian, trình diễn văn nghệ dân tộc.<br>
+        Các trò chơi dân gian như kéo co, thả diều nghệ thuật, cờ tướng, đẩy gậy, chọi gà, cờ người.<br>
+        Biểu diễn múa lân sư rồng, múa mâm thao, múa bóng rỗi, múa đĩa chén.<br>
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bach_Chua_Xu_Temple.jpg" 
-         alt="Lễ hội Bà Chúa Xứ" width="300"><br><br>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/le-hoi-via-ba-chua-xu-nui-sam-net-dep-tin-nguong-duoc-unesco-cong-nhan-1-1659977646.jpg" 
+             alt="Tượng Bà Chúa Xứ Núi Sam" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Tượng bà Chúa Xứ Núi Sam trang nghiêm với những đường nét tinh xảo
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/le-hoi-via-ba-chua-xu-nui-sam-net-dep-tin-nguong-duoc-unesco-cong-nhan-2-1659977647.jpg" 
+             alt="Dòng người dự lễ Vía Bà" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Dòng người tham gia Lễ hội vía bà Chúa Xứ Núi Sam đông đúc, nhộn nhịp
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/le-hoi-via-ba-chua-xu-nui-sam-net-dep-tin-nguong-duoc-unesco-cong-nhan-3-1659977647.jpg" 
+             alt="Nghi thức rước Bà Chúa Xứ" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Thực hiện nghi thức rước bà Chúa Xứ Núi Sam từ trên núi về nơi thờ tự
+        </figcaption>
+    </figure>
 
-    <!-- 2️⃣ Lễ hội Óc Om Bóc – Đua ghe Ngo -->
-    <h3>2️⃣ Lễ hội Óc Om Bóc – Đua ghe Ngo (xã Mỹ Phú, Chợ Mới)</h3>
-    <p style="text-align: left;">
-        Diễn ra vào tháng 10 âm lịch, sau vụ thu hoạch lúa.<br>
-        Người Khmer tổ chức để tạ ơn thần nước và tổ chức đua ghe truyền thống.
+    <h3>1.2 Lễ hội đua bò Bảy Núi (Tri Tôn, Tịnh Biên)</h3>
+    <p>
+        Lễ hội đua bò Bảy Núi 2025 khai mạc sáng 20/9, tại An Giang, quy tụ 64 đôi bò từ nhiều địa phương.<br>
+        Với những màn tranh tài gay cấn và sắc màu văn hóa Khmer đặc trưng, sự kiện trở thành điểm nhấn du lịch, quảng bá hình ảnh vùng đất Bảy Núi đến đông đảo du khách trong và ngoài nước.<br>
+        Đông đảo người dân và du khách chờ xem Lễ hội đua bò Bảy Núi An Giang 2025 vào sáng 20/9.<br>
+        Ngay từ sáng sớm, hàng nghìn người dân và du khách đã có mặt tại sân đua để cổ vũ.<br>
+        Trên đường đua, từng đôi bò lao đi quyết liệt trong tiếng trống giục giã và hò reo vang dội, tạo nên bầu không khí lễ hội sôi động, náo nhiệt.<br>
+        Năm nay, lễ hội có 64 đôi bò tham gia tranh tài.<br>
+        Giải đua bò Bảy Núi An Giang năm nay quy tụ 64 đôi bò, đến từ 10 xã, phường của huyện Tri Tôn, Tịnh Biên và vùng lân cận.<br>
+        Các đội tranh tài theo thể thức loại trực tiếp, lần lượt qua vòng loại, tứ kết, bán kết và chung kết trong cùng một ngày.<br>
+        Ngoài các giải Nhất, Nhì, Ba, Tư, Ban tổ chức còn trao nhiều giải khuyến khích cùng danh hiệu “nài bò xuất sắc”.<br>
+        Trong thời gian chờ đợi, chủ bò chăm sóc vật cưng của mình rất tỉ mỉ và chu đáo.<br>
+        Hội đua bò Bảy Núi có nguồn gốc từ phong tục của đồng bào Khmer trong dịp lễ Sene Dolta – lễ báo hiếu tổ tiên sau mùa vụ.<br>
+        Thuở ban đầu, đây chỉ là trò vui cộng đồng tổ chức tại sân chùa, vừa mang tính giải trí, vừa thắt chặt tình làng nghĩa xóm.<br>
+        Ông Lê Trung Hồ, Phó Chủ tịch UBND tỉnh An Giang phát biểu khai mạc tại Lễ Hội đua bò Bảy Núi - An Giang.<br>
+        Ông Lê Trung Hồ, Phó Chủ tịch UBND tỉnh An Giang, Trưởng ban Tổ chức hội đua nhấn mạnh, lễ hội là dịp để bảo tồn và phát huy giá trị văn hóa truyền thống của đồng bào Khmer, đồng thời khuyến khích phong trào thể dục thể thao quần chúng.<br>
+        Sự kiện còn là cơ hội quảng bá hình ảnh vùng đất và con người An Giang đến đông đảo du khách trong và ngoài nước.<br>
+        Đua bò là nét đẹp văn hóa độc đáo của người Khmer An Giang.<br>
+        Theo ông Lê Trung Hồ, Lễ hội đua bò Bảy Núi là hoạt động văn hóa – thể thao gắn liền với Lễ Sene Dolta của đồng bào Khmer Nam Bộ, đã được công nhận là di sản văn hóa phi vật thể quốc gia.<br>
+        Trải qua 30 lần tổ chức, lễ hội ngày càng khẳng định vị thế là sự kiện văn hóa - du lịch tiêu biểu, trở thành điểm nhấn của vùng Bảy Núi và đóng góp tích cực cho sự phát triển kinh tế - xã hội của tỉnh An Giang.<br>
+        Trước giờ khai mạc, chương trình văn nghệ do Đoàn nghệ thuật Khmer An Giang biểu diễn với nhiều tiết mục đặc sắc như múa Tre đan, hát múa hát mừng Phum Sróc ngày mới.<br>
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Oc_Om_Bok.jpg" 
-         alt="Đua ghe Ngo" width="300"><br><br>
-
-    <!-- 3️⃣ Ẩm thực truyền thống -->
-    <h3>3️⃣ Bánh tét Châu Đốc</h3>
-    <p style="text-align: left;">
-        Bánh tét lá cẩm, bánh tét Châu Đốc là đặc sản nổi tiếng.<br>
-        Đây là món ăn truyền thống thường xuất hiện trong các dịp lễ Tết.
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_09_20_294_53286061/c38630b820f1c9af90e0.jpg.avif" 
+             alt="64 đôi bò tranh tài" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Lễ hội có 64 đôi bò tham gia tranh tài.
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_09_20_294_53286061/50a5a49bb4d25d8c04c3.jpg.avif" 
+             alt="Chủ bò chăm sóc vật cưng" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Trong thời gian chờ đợi, chủ bò chăm sóc vật cưng của mình rất tỉ mỉ và chu đáo.
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://www.vietfuntravel.com.vn/image/data/Mien-tay-n/le-hoi-mien-tay/le-hoi-dua-bo-bay-nui-2.jpg" 
+             alt="Lễ hội đua bò Bảy Núi – An Giang" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Ảnh minh họa lễ hội đua bò.
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_09_20_294_53286061/afcf5af14ab8a3e6faa9.jpg.avif" 
+             alt="Ông Lê Trung Hồ phát biểu" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Ông Lê Trung Hồ, Phó Chủ tịch UBND tỉnh An Giang phát biểu khai mạc tại Lễ Hội đua bò Bảy Núi - An Giang.
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://photo-baomoi.bmcdn.me/w700_r1/2025_09_20_294_53286061/5108a736b77f5e21076e.jpg.avif" 
+             alt="Đua bò nét đẹp Khmer" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Đua bò là nét đẹp văn hóa độc đáo của người Khmer An Giang
+        </figcaption>
+    </figure>
+    
+    <h3>1.3 Chùa Ông Bắc (Bắc Đế Miếu) và Lễ cúng vía ông Bắc Đế</h3>
+    <p>
+        Chùa Ông Bắc là một trong những hội quán đầu tiên của người Hoa tại An Giang, được công nhận là Di tích lịch sử, văn hóa cấp Quốc gia vào năm 1987.<br>
+        Địa chỉ: Đường Phạm Hồng Thái, phường Mỹ Long, thành phố Long Xuyên, An Giang.<br>
+        Ngôi chùa được xây dựng từ lâu và trùng tu hoàn tất vào năm 1891, kiến trúc theo hình chữ “Quốc” với các hàng cột tròn bằng gỗ căm xe vững chắc.<br>
+        Mái ngói âm dương xanh đỏ, tiền sảnh thờ Phật Thích Ca, tượng Bồ Tát Quan Âm, Địa Tạng, Ngọc Hoàng Thượng đế.<br>
+        Chánh điện thờ thần Bắc Đế, nối liền tiền sảnh qua hai lối đi song song, lưu giữ nhiều di vật quý: chuông đồng, đỉnh sắt, bia ký, ba khám thờ.<br>
+        Phong cách kiến trúc mang đậm màu sắc Trung Hoa, thể hiện tín ngưỡng và văn hóa người Hoa tại An Giang.<br>
+        Chùa Bắc Đế thường tổ chức lễ cúng vào các ngày rằm trong tháng, trong đó ngày mùng 3 tháng 3 âm lịch là lễ lớn nhất – lễ cúng vía ông Bắc Đế.<br>
+        Ngoài ra còn có các lễ khác: cúng vía Bà Thiên Hậu Thánh Mẫu (23/3) và Quan Công (24/6 âm lịch).<br>
+        Người dân địa phương và du khách đến dâng hương, cầu bình an, lễ hội duy trì hàng trăm năm, vẫn giữ nguyên nét đẹp văn hóa và giá trị tinh thần.<br>
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Banh_tet.jpg" 
-         alt="Bánh tét Châu Đốc" width="300"><br><br>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/chua-ong-bac-bac-de-mieu-di-tich-kien-truc-chinh-thong-cua-dan-toc-hoa-1-1659802363.jpg" 
+             alt="Chùa Ông Bắc An Giang" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Chùa Ông Bắc (Bắc Đế Miếu) là nơi thờ tự của người Hoa đến sinh cơ lập nghiệp tại An Giang
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/chua-ong-bac-bac-de-mieu-di-tich-kien-truc-chinh-thong-cua-dan-toc-hoa-2-1659802364.jpg" 
+             alt="Tiền sảnh chùa Ông Bắc" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Tiền sảnh chùa Ông Bắc (Bắc Đế Miếu) có thờ Phật Thích Ca, tượng Bồ Tát Quan Âm, Địa Tạng, Ngọc Hoàng Thượng đế…
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/chua-ong-bac-bac-de-mieu-di-tich-kien-truc-chinh-thong-cua-dan-toc-hoa-4-1659802364.jpg" 
+             alt="Chùa Ông Bắc trang nghiêm" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Chùa Ông Bắc (Bắc Đế Miếu) mang vẻ ngoài trang nghiêm
+        </figcaption>
+    </figure>
 
-    <!-- 4️⃣ Dệt thổ cẩm -->
-    <h3>4️⃣ Dệt thổ cẩm của người Khmer</h3>
-    <p style="text-align: left;">
-        Người Khmer dùng thổ cẩm để may trang phục lễ hội và các đồ truyền thống.
+    <h2>2️⃣ Nghề truyền thống</h2>
+
+    <h3>2.1 Làng nghề dệt lụa Tân Châu</h3>
+    <p>
+        Dệt lụa Tân Châu là nghề truyền thống nổi tiếng ở An Giang từ thế kỷ 20.<br>
+        Tạo ra loại lụa Lãnh Mỹ A đen huyền, mềm mại, từng được ưa chuộng.<br>
+        Quy trình sản xuất rất kỳ công với hàng trăm lần nhúng – xả – phơi.<br>
+        Hiện nay, nghề vẫn duy trì và sáng tạo thêm nhiều màu sắc bắt mắt cho lụa.<br>
+        Du khách thường mua lụa Tân Châu làm quà khi đến An Giang.<br>
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Khmer_weaving.jpg" 
-         alt="Dệt thổ cẩm" width="300"><br><br>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.wG7TaGfKbdfYEMM3zr8-ywHaCd?w=304&h=116&c=7&r=0&o=7&dpr=1.1&pid=1.7&rm=3" 
+             alt="Làng dệt lụa Tân Châu" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Làng làm lụa Tân Châu
+        </figcaption>
+    </figure>
 
-    <!-- 5️⃣ Đặc sản cá linh -->
-    <h3>5️⃣ Đặc sản cá linh</h3>
-    <p style="text-align: left;">
-        Cá linh, bông điên điển và các đặc sản khác tạo nên ẩm thực phong phú của An Giang.
+    <h3>2.2 Làng nghề se nhang Bình Đức</h3>
+    <p>
+        Làng nghề se nhang Bình Đức hình thành từ năm 1940, có tuổi đời hơn 100 năm.<br>
+        Sản xuất đa dạng nhang se, nhang sóc, nhang trần, nhang thơm, nhang nêu với mùi hương dịu nhẹ, thanh tao.<br>
+        Được nhiều du khách lựa chọn mua về làm quà.<br>
     </p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Ca_linh_fish.jpg" 
-         alt="Cá linh An Giang" width="300"><br><br>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/lang-nghe-nhang-binh-duc-noi-tao-nen-huong-thom-nhe-nhang-an-yen-3-1661156927.jpg" 
+             alt="Làng nghề nhang Bình Đức" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Làng nghề nhang Bình Đức chính là mốc nối giúp tình cảm xóm giềng được bền chặt và vui vẻ hơn
+        </figcaption>
+    </figure>
 
+    <h3>2.3 Làng nghề mộc Chợ Thủ</h3>
+    <p>
+        Nghề mộc Chợ Thủ đã tồn tại hơn 200 năm, nổi tiếng với các sản phẩm gỗ chạm khắc tinh tế.<br>
+        Sản phẩm gồm tủ thờ, bàn ghế, tủ quần áo, giường, phù điêu trang trí…<br>
+        Người nghệ nhân trải qua nhiều công đoạn phức tạp để tạo ra sản phẩm đẹp mắt và hữu dụng.<br>
+    </p>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://thuviengo.vn/wp-content/uploads/2021/11/lang-nghe-moc-cho-thu-1.jpg" 
+             alt="Làng nghề mộc Chợ Thủ" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Làng nghề mộc Chợ Thủ An Giang
+        </figcaption>
+    </figure>
+
+    <h3>2.4 Làng nghề nấu đường thốt nốt An Phú</h3>
+    <p>
+        Làng nghề nấu đường thốt nốt An Phú chuẩn bị từ mùa mưa kết thúc.<br>
+        Nấu bằng nước tiết ra từ bông cây thốt nốt, không dùng chất phụ gia.<br>
+        Khoảng 8-10 lít nước thốt nốt thu về 1kg đường.<br>
+        Du khách có thể mua làm quà tốt cho sức khỏe.<br>
+    </p>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/kham-pha-lang-nghe-nau-duong-thot-not-o-an-giang-vao-mua-kho-05-1660581905.jpg" 
+             alt="Mẻ đường thốt nốt" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Từng mẻ đường trời ban được nấu một cách cẩn thận
+        </figcaption>
+    </figure>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/kham-pha-lang-nghe-nau-duong-thot-not-o-an-giang-vao-mua-kho-06-1660581905.jpg" 
+             alt="Khuôn đường thốt nốt" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Ở những hộ gia đình thường không nhất định sẽ dùng khuôn truyền thống
+        </figcaption>
+    </figure>
+
+    <h3>2.5 Làng nghề lưỡi câu Mỹ Hòa</h3>
+    <p>
+        Làng nghề lưỡi câu Mỹ Hòa có tuổi đời hơn 50 năm, nằm bên kênh Long Xuyên, núi Sập.<br>
+        Sản xuất nhiều loại lưỡi câu: đúc, phược, kiều, phi, tôm, rắn, ếch…<br>
+        Được biết đến với độ sắc bén, bền và đa dạng kích cỡ, giá thành hợp lý.<br>
+        Du khách thường ghé thăm để mua hoặc tham quan.<br>
+    </p>
+    <figure style="text-align: center; margin: 20px 0;">
+        <img src="https://mia.vn/media/uploads/blog-du-lich/kham-pha-lang-nghe-luoi-cau-my-hoa-noi-tieng-o-an-giang-4-1661423955.jpg" 
+             alt="Làng nghề lưỡi câu Mỹ Hòa" 
+             style="max-width: 100%; height: auto;">
+        <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+            Làng nghề lưỡi câu Mỹ Hoà mang đến nguồn thu nhập ổn định cho người dân
+        <h2>3️⃣ Ẩm thực truyền thống</h2>
+
+<h3>3.1 Món Mặn</h3>
+
+<h4>3.1.1 Bún cá Long Xuyên</h4>
+<p style="text-align: left;">
+Đây là món ăn đã trở thành biểu tượng của ẩm thực An Giang. Nước lèo được nấu từ xương cá và tôm khô, có vị ngọt thanh. Sợi bún mềm dai, ăn cùng cá lóc tươi ngon được xào với nghệ và sả tạo nên màu vàng bắt mắt. Món này thường ăn kèm với các loại rau sống đặc trưng như bắp chuối, rau muống bào, và đặc biệt là bông điên điển vào mùa nước nổi.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://i.pinimg.com/736x/bf/6f/a0/bf6fa0a004c62a0b52523e5bd60a658c--m%C3%A1y-bay-western.jpg" 
+         alt="Bún cá Long Xuyên" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Bún cá Long Xuyên - Đặc sản An Giang
+    </figcaption>
+</figure>
+
+<h4>3.1.2 Gỏi sầu đâu</h4>
+<p style="text-align: left;">
+Món gỏi này có hương vị rất đặc biệt. Lá sầu đâu có vị đắng nhẹ nhưng hậu ngọt, khi trộn với khô cá sặc, tôm, thịt ba chỉ, và nước mắm chua ngọt lại tạo ra một món ăn hài hòa, kích thích vị giác.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://www.bing.com/th/id/OSK.6c56aa99a5d5f8bb284492cd9ff4757b?pid=ImgDet&w=100&h=100&c=7&dpr=1.1&o=7&rm=3" 
+         alt="Gỏi sầu đâu" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Gỏi sầu đâu với vị đắng nhẹ đặc trưng
+    </figcaption>
+</figure>
+
+<h4>3.1.3 Gà đốt lá chúc</h4>
+<p style="text-align: left;">
+Món ăn này là đặc sản của vùng Bảy Núi. Gà được tẩm ướp với gia vị và lá chúc (một loại lá có mùi thơm đặc trưng giống chanh) rồi nướng hoặc đốt trên than hồng. Thịt gà mềm, thơm và có vị lạ miệng khó quên.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://cdn.tgdd.vn/Files/2021/08/23/1377175/cach-lam-ga-dot-la-chuc-o-thum-thom-ngon-chuan-vi-an-giang-202112281620336574.jpg" 
+         alt="Gà đốt lá chúc" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Gà đốt lá chúc thơm ngon chuẩn vị An Giang
+    </figcaption>
+</figure>
+
+<h4>3.1.4 Tung lò mò (Lạp xưởng bò)</h4>
+<p style="text-align: left;">
+Đây là món ăn truyền thống của người Chăm ở An Giang. Lạp xưởng được làm từ thịt bò, mỡ, cơm nguội và gia vị, sau đó phơi khô. Tung lò mò thường được nướng hoặc chiên, ăn kèm rau sống và tương ớt, mang lại hương vị thơm ngon và độc đáo.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.pybeGu0uam9n7CjPNlC9CQHaFL?rs=1&pid=ImgDetMain&o=7&rm=3" 
+         alt="Tung lò mò" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Tung lò mò (Lạp xưởng bò) của người Chăm
+    </figcaption>
+</figure>
+
+<h3>3.2 Món Ngọt</h3>
+
+<h4>3.2.1 Bánh bò thốt nốt</h4>
+<p style="text-align: left;">
+Với nguyên liệu chính là đường và cơm thốt nốt, loại bánh này có màu vàng tự nhiên, vị ngọt thanh và hương thơm đặc trưng của trái thốt nốt. Bánh mềm xốp, ăn cùng nước cốt dừa béo ngậy tạo nên một món ăn dân dã nhưng rất hấp dẫn.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.PlH-fi6vVcKhOquSA3plaAHaFt?rs=1&pid=ImgDetMain&o=7&rm=3" 
+         alt="Bánh bò thốt nốt" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Bánh bò thốt nốt thơm ngon đậm vị
+    </figcaption>
+</figure>
+
+<h4>3.2.2 Nước thạch thốt nốt</h4>
+<p style="text-align: left;">
+Vào những ngày cuối tháng 4, khi thời tiết ĐBSCL oi ả, nóng bức, nước và thạch trái thốt nốt từ vùng Bảy Núi (An Giang) trở thành lựa chọn hàng đầu để giải nhiệt cho cả người dân địa phương và du khách.
+Quy trình thu hoạch bắt đầu từ sáng sớm, người dân leo lên cây thốt nốt (cây cái cho trái, cây đực không có quả) để lấy nước. Họ cắt ngọn hoa rồi treo chai nhựa hứng nước; mỗi vết cắt có thể cho khoảng 1 lít nước sau một đêm. Nước thốt nốt sau đó được đun sôi, đóng chai và bán với giá 5.000-10.000 đồng/lít.
+Trái thốt nốt có đường kính 10-18 cm, vỏ đen, chứa nhiều múi thạch trắng ngần, mềm, ngọt mát và thơm như cùi dừa non. Hiện tại, một chục trái bán sỉ có giá 50.000-60.000 đồng. Phần thạch này có thể ăn trực tiếp hoặc chế biến thành các món khác. Một ly nước thốt nốt kèm thạch bán cho khách đi đường có giá 10.000 đồng, giúp xua tan cái nóng.
+Du khách đến đây có thể dễ dàng tìm thấy nhiều sản phẩm từ thốt nốt như trái tươi, nước thốt nốt và đường thốt nốt.
+</p>
+
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://dantocmiennui-media.baotintuc.vn/images/71dc5abaef07046fa2b3467e25bdef71c36c89f341f20e21eca0c76688c1dca6701fac7144dcc5f001a690b93e77920f63ff30c89136886fb49fa90c3c935bfada25964922821ef34d041b4b86a052e36cfcd2900f826ca4708fa6cbbdd25b81037e09a16b7b340d7b64fbf3d75ae1454c47e0ede1269046ff7bd1a8305bea26747fca6f5e84a99830ba065aec437e42/11-phan-thach-trang-cua-thot-not-co-the-an-ngay-hoac-che-bien-thanh-nhieu-mon-khac-1493094694431-1.jpg"
+         alt="Thạch thốt nốt tươi ngon"
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Phần thạch trắng của thốt nốt      
+    </figcaption>
+</figure>
+
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://dantocmiennui-media.baotintuc.vn/images/71dc5abaef07046fa2b3467e25bdef71810a4a09aae5de571b0df32b41aebdab6bc0216471082b59e61a7844c27eba177fe6aac3272fd1abe364229d5ea8e5fa3760a54895fb402f3cc1d9d3be884e9ab6b1f1eb93511c675439ad46f43d24a0bd3c849be49229eac5383b827d7ca0d76083ec7b757374f604eb748459a96d32977f3fc821eed54d98aca90e8b224bc0/12-moi-ly-nuoc-thot-not-co-luon-thach-duoc-ban-cho-khach-di-duong-giai-nhiet-voi-gia-10-000-dong-1493094741610-1.jpg"
+         alt="Ly nước thốt nốt giải khát"
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Nước thốt nốt - Tri Tôn
+    </figcaption>
+</figure>
+
+<h4>3.2.3 Cốm dẹp</h4>
+<p style="text-align: left;">
+Cốm dẹp An Giang nổi bật với màu trắng ngà đặc trưng, tạo nên sự khác biệt so với cốm xanh Hà Nội. Món ăn này gắn bó sâu sắc với đời sống và tuổi thơ của người Khmer ở An Giang, trở thành lễ vật không thể thiếu trong lễ Ok om bok (lễ Cúng Trăng) vào tháng 10 âm lịch. Việc dâng cúng cốm dẹp thể hiện lòng biết ơn thần linh và ước nguyện về một mùa màng bội thu.
+
+Cốm dẹp An Giang thường được thưởng thức theo nhiều cách. Đơn giản nhất là ăn trực tiếp trên lá chuối để cảm nhận vị tự nhiên. Ngoài ra, người ta có thể trộn cốm với dừa nạo, đậu phộng rang giã và đường để tăng thêm vị béo ngậy. Món ăn này còn được biến tấu bằng cách cuốn với bánh tráng ngọt hoặc bánh phồng. Với hương vị tinh tế và ý nghĩa văn hóa sâu sắc, cốm dẹp An Giang đã trở thành món quà biếu ý nghĩa được du khách yêu thích, sánh ngang với đặc sản bánh bò thốt nốt.
+</p>
+
+<p></p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://www.vietfuntravel.com.vn/image/data/Mekong/dac-san-an-giang-com-dep-an-giang-3.jpg"
+         alt="Cốm dẹp An Giang truyền thống"
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Cốm dẹp An Giang - Đặc sản dân dã của người dân Khmer
+    </figcaption>
+</figure>
+
+<h2>4️⃣ Tín ngưỡng, phong tục</h2>
+
+<h3>4.1 Người Kinh</h3>
+<p style="text-align: left;">
+Người Kinh ở An Giang chiếm đa số và có các phong tục, tín ngưỡng tương đồng với người Việt ở các vùng miền khác, nhưng cũng có những nét đặc trưng riêng do vị trí địa lý và lịch sử.<br>
+<strong>Tín ngưỡng thờ Mẫu:</strong> Nổi bật nhất là tín ngưỡng thờ Bà Chúa Xứ Núi Sam. Đây là một trong những tín ngưỡng thờ Mẫu lớn nhất ở Nam Bộ. Lễ hội Vía Bà thu hút hàng triệu người hành hương mỗi năm, thể hiện lòng tôn kính đối với vị thần bảo hộ đất đai, cầu mong mưa thuận gió hòa và cuộc sống bình yên.<br>
+<strong>Thờ Thành hoàng:</strong> Tương tự như các vùng miền khác, người Kinh ở An Giang cũng thờ Thành hoàng bổn cảnh tại các đình làng. Đây là nét văn hóa truyền thống để tưởng nhớ những người có công khai phá và bảo vệ làng xã.<br>
+<strong>Tín ngưỡng tôn giáo:</strong> Phật giáo và Thiên Chúa giáo là hai tôn giáo chính được người Kinh theo. Tuy nhiên, ở An Giang còn là cái nôi của các tôn giáo bản địa như Phật giáo Hòa Hảo và Tứ Ân Hiếu Nghĩa, có ảnh hưởng sâu sắc đến đời sống tâm linh và lối sống của người dân.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://lichvannien.me/wp-content/uploads/2025/09/phong-tuc-tap-quan-nguoi-kinh.jpg" 
+         alt="Phong tục lễ hội người Kinh" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Phong tục trong lễ hội của người Kinh
+    </figcaption>
+</figure>
+
+<h3>4.2 Người Khmer</h3>
+<p style="text-align: left;">
+Người Khmer ở An Giang chủ yếu sinh sống ở vùng Bảy Núi (Tri Tôn, Tịnh Biên), họ giữ gìn và phát huy những phong tục, tín ngưỡng truyền thống của mình.<br>
+<strong>Phật giáo Nam tông Khmer:</strong> Đây là tôn giáo chính và là trung tâm của đời sống văn hóa, xã hội của người Khmer. Mỗi ngôi chùa không chỉ là nơi thờ cúng mà còn là nơi sinh hoạt cộng đồng và giáo dục văn hóa cho các thế hệ.<br>
+<strong>Lễ hội truyền thống:</strong><br>
+- <em>Tết Chol Chnam Thmay:</em> Lễ đón năm mới của người Khmer, thường diễn ra vào tháng 4 dương lịch. Dịp này người dân tổ chức các nghi lễ như tắm tượng Phật, té nước chúc phúc cho nhau.<br>
+- <em>Lễ Đôlta:</em> Là lễ báo hiếu và tưởng nhớ ông bà, tổ tiên, thường diễn ra vào tháng 9 hoặc tháng 10 âm lịch.<br>
+- <em>Hội đua bò Bảy Núi:</em> Một lễ hội thể thao văn hóa độc đáo, diễn ra sau lễ Đôlta. Đây không chỉ là trò chơi mà còn là biểu tượng của tinh thần thượng võ và sự gắn kết cộng đồng.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://dantocmiennui-media.baotintuc.vn/images/5c2d5ba08b0659aae9d48bffd06a7dd20773996a9bace6c185654382e7f7b66b4d878ebdae91056be5f94b1c90e11759/van-hoa-5-1.jpg" 
+         alt="Văn hóa người Khmer" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Ảnh minh họa văn hóa người Khmer
+    </figcaption>
+</figure>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://dantocmiennui-media.baotintuc.vn/images/71dc5abaef07046fa2b3467e25bdef710773996a9bace6c185654382e7f7b66bc45801046fe02aee17d5277bcd264441/van-hoa-10-1.jpg" 
+         alt="Lễ dâng y Khmer" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Lễ dâng y của người Khmer, phong tục truyền thống
+    </figcaption>
+</figure>
+
+<h3>4.3 Người Chăm</h3>
+<p style="text-align: left;">
+Người Chăm ở An Giang sống tập trung tại các làng ven sông Hậu, chủ yếu theo đạo Hồi (Islam). Phong tục và tín ngưỡng của họ gắn liền với tôn giáo này.<br>
+<strong>Hồi giáo:</strong> Thánh đường Hồi giáo (Masjid) là trung tâm của đời sống tín ngưỡng và sinh hoạt. Họ thực hiện các nghi thức cầu nguyện 5 lần mỗi ngày và tham gia các hoạt động cộng đồng tại thánh đường.<br>
+<strong>Tháng lễ Ramadan:</strong> Đây là nghi thức quan trọng nhất, người Chăm nhịn ăn từ lúc mặt trời mọc đến lúc mặt trời lặn trong một tháng để thanh lọc cơ thể và rèn luyện ý chí.<br>
+<strong>Phong tục và kiêng kỵ:</strong> Người Chăm rất coi trọng lễ giáo và có những quy tắc riêng trong đời sống. Họ kiêng ăn thịt heo, chó và các loài chim có móng vuốt. Trong giao tiếp, nam giới thường bắt tay, trong khi nữ giới có thể đặt tay lên ngực để chào.
+</p>
+
+<h3>4.4 Người Hoa</h3>
+<p style="text-align: left;">
+Người Hoa ở An Giang sống chủ yếu ở các khu vực đô thị như Long Xuyên và Châu Đốc, với truyền thống kinh doanh và văn hóa phong phú.<br>
+<strong>Tín ngưỡng:</strong> Người Hoa tin vào nhiều vị thần của Đạo giáo và Phật giáo, đồng thời rất coi trọng thờ cúng tổ tiên. Các chùa, miếu của người Hoa thường thờ các vị thần như Quan Công, Thiên Hậu Thánh Mẫu (Mã Tổ), giúp họ cầu mong bình an và may mắn.<br>
+<strong>Phong tục:</strong><br>
+- <em>Múa lân, múa rồng:</em> Thường diễn ra vào dịp lễ tết hoặc khai trương cửa hàng, ý nghĩa cầu may mắn và xua đuổi tà khí.<br>
+- <em>Lễ mừng thọ:</em> Khi cha mẹ, ông bà đạt độ tuổi nhất định, con cháu tổ chức lễ mừng thọ linh đình để bày tỏ lòng biết ơn và chúc phúc.<br>
+<strong>Vai trò:</strong> Người Hoa đóng vai trò quan trọng trong phát triển kinh tế, đặc biệt là thương mại và dịch vụ. Họ góp phần xây dựng các trung tâm thương mại và duy trì nhiều ngành nghề thủ công truyền thống tại An Giang.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://images.baodantoc.vn/uploads/2021/Th%C3%A1ng%209/Ng%C3%A0y_27/Anh/untitled%20folder%201/z2796559250840_b9bead643c1c844f1f46ae2ed153e233.jpg" 
+         alt="Bà Thiên Hậu Thánh Mẫu" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Bà Thiên Hậu Thánh Mẫu được thờ trong chính điện Hội quán Tuệ Thành (Chùa Bà, quận 5 - Chợ Lớn)
+    </figcaption>
+</figure>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://images.baodantoc.vn/uploads/2021/Th%C3%A1ng%209/Ng%C3%A0y_27/Anh/untitled%20folder%201/ANH%20NGUOI%20HOA%20THO%20CUNG%202.jpg" 
+         alt="Tượng Bà Thiên Hậu" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Tượng Bà Thiên Hậu Thánh Mẫu được thờ cúng ở nhiều hội quán của người Hoa
+    </figcaption>
+</figure>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://images.baodantoc.vn/uploads/2021/Th%C3%A1ng%209/Ng%C3%A0y_27/Anh/untitled%20folder%201/ANH%20NGUOI%20HOA%20THO%20CUNG%207.jpg" 
+         alt="Ban thờ Quan Thế Âm" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Ban thờ tự Quan Thế Âm Bồ Tát tại Hội quán Ôn Lăng (phường 11, quận 5, Chợ Lớn)
+    </figcaption>
+</figure>
+
+<h2>5️⃣ Đặc sản</h2>
+
+<h3>5.1 Mắm Châu Đốc</h3>
+<p style="text-align: left;">
+Mắm là một trong những đặc sản nổi tiếng nhất của An Giang. Vùng Châu Đốc được mệnh danh là "vương quốc mắm" với hàng trăm loại mắm khác nhau, từ mắm cá linh, cá sặc đến mắm thái, mắm cá trèn. Mắm không chỉ là nguyên liệu nấu ăn mà còn là món ăn dân dã, đậm đà hương vị quê hương.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://hstatic.net/066/1000057066/1/2016/1-2/calinh_master.jpg" 
+         alt="Mắm Cá Linh" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Mắm Cá Linh
+    </figcaption>
+</figure>
+
+<h3>5.2 Đường thốt nốt</h3>
+<p style="text-align: left;">
+Đây là sản phẩm đặc trưng của vùng Bảy Núi. Đường được làm từ nước của cây thốt nốt, có vị ngọt thanh, thơm dịu, và không gắt như đường mía. Đường thốt nốt thường được dùng để nấu chè, làm bánh hoặc làm quà biếu.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/filters:quality(95)/https://cms-prod.s3-sgn09.fptcloud.com/duong_thot_not_co_tot_khong_nhung_luu_y_khi_su_dung_duong_thot_not_4_bab42297aa.jpg" 
+         alt="Đường thốt nốt Tri Tôn" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Đường thốt nốt - Tri Tôn
+    </figcaption>
+</figure>
+
+<h3>5.3 Bánh bò thốt nốt</h3>
+<p style="text-align: left;">
+Loại bánh này có màu vàng tự nhiên, được làm từ bột gạo và đường thốt nốt. Bánh mềm xốp, thơm mùi đặc trưng, thường được ăn kèm với nước cốt dừa.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://product.hstatic.net/1000384853/product/418_1de436a2361041e09d8cb79511224a32_1024x1024.jpg" 
+         alt="Bánh bò thốt nốt Tri Tôn" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Bánh bò thốt nốt - Tri Tôn
+    </figcaption>
+</figure>
+
+<h3>5.4 Tung lò mò (Lạp xưởng bò)</h3>
+<p style="text-align: left;">
+Là đặc sản của người Chăm ở An Giang. Tung lò mò được làm từ thịt bò, mỡ, và gia vị. Món này thường được nướng hoặc chiên, có hương vị đặc trưng, ăn kèm với rau sống và tương ớt.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://food-map.s3.ap-southeast-1.amazonaws.com/news/2021/05/72-lap-xuong-2.jpg" 
+         alt="Tung lò mò đặc sản Chăm" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Tung lò mò (Lạp xưởng bò) - Đặc sản trứ danh của đồng bào Chăm tỉnh An Giang
+    </figcaption>
+</figure>
+
+<h3>5.5 Khô cá lóc, cá sặc</h3>
+<p style="text-align: left;">
+An Giang nổi tiếng với các loại khô cá, đặc biệt là khô cá lóc và cá sặc. Cá được phơi khô tự nhiên dưới nắng, mang vị ngọt đậm đà, rất thích hợp để làm quà.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://th.bing.com/th/id/R.c0930e24d01ce40a13191f8087bfa9fc?rik=ZGT2oQjOiOTF%2fg&riu=http%3a%2f%2fchodokho.com%2fupload%2fimages%2fcach-lam-kho-ca-loc-ngon.jpg&ehk=ohMIVzalWr5Y6SINRykxnCKSsByxLQN6Bkkx9Xh5A4A%3d&risl=&pid=ImgRaw&r=0" 
+         alt="Khô cá lóc Châu Đốc" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Khô cá lóc - Châu Đốc
+    </figcaption>
+</figure>
+
+<h3>5.6 Bánh phồng chuối</h3>
+<p style="text-align: left;">
+Món bánh dân dã của miền Tây, được làm từ chuối chín, bột năng, và dừa nạo. Bánh được phơi khô và chiên phồng lên khi ăn, có vị giòn, ngọt và thơm mùi chuối.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://thamhiemmekong.com/wp-content/uploads/2020/01/langnghebanhphongphumy-1.jpg" 
+         alt="Bánh phồng chuối Phú Mỹ" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Bánh phồng chuối - Phú Mỹ, Phú Tân
+    </figcaption>
+</figure>
+
+<h3>5.7 Cơm tấm Long Xuyên</h3>
+<p style="text-align: left;">
+Mặc dù là món ăn quen thuộc ở nhiều nơi, cơm tấm Long Xuyên lại có hương vị rất riêng. Món ăn này thường được ăn kèm với bì, chả, sườn nướng, và đặc biệt là nước mắm pha chua ngọt đặc trưng.
+</p>
+<figure style="text-align: center; margin: 20px 0;">
+    <img src="https://tse1.mm.bing.net/th/id/OIP.cU8rlXadbl97iLme1QLw8gAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" 
+         alt="Cơm tấm Long Xuyên" 
+         style="max-width: 100%; height: auto;">
+    <figcaption style="font-size: 18px; color: black; margin-top: 5px; font-family: Arial, sans-serif;">
+        Cơm tấm - Long Xuyên
+    </figcaption>
+<h2 style="text-align: center; color: purple; margin-top: 50px; font-size: 32px; font-family: Arial, sans-serif;">Thành viên thực hiện</h2>
+
+<p style="text-align: center; font-size: 24px; color: black; font-family: Arial, sans-serif; font-weight: bold; margin-top: 20px;">
+    Trưởng nhóm: Võ Quốc Vĩnh
+</p>
+<p style="text-align: center; font-size: 24px; color: black; font-family: Arial, sans-serif; font-weight: bold; margin-top: 10px;">
+    Thành viên chính (chủ file): Nguyễn Thuận Khang
+</p>
+<p style="text-align: center; font-size: 24px; color: black; font-family: Arial, sans-serif; font-weight: bold; margin-top: 10px;">
+    Thành viên phụ (file): Võ Quốc Vĩnh, Nguyễn Ngọc Khánh Hà, Hứa Trần Hải Vy
+</p>
+<p style="text-align: center; font-size: 24px; color: black; font-family: Arial, sans-serif; font-weight: bold; margin-top: 10px;">
+    Thuyết trình: Hứa Trần Hải Vy
+</figure>
 </body>
 </html>
